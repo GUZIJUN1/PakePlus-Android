@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>继电器控制</title>
+<style>
+body{background:#222;text-align:center;margin-top:100px}
+button{padding:20px 40px;font-size:22px;margin:10px;width:200px}
+#on{background:#0c0;color:white;border:none;border-radius:10px}
+#off{background:#c00;color:white;border:none;border-radius:10px}
+</style>
+</head>
+
+<body>
+<button id="on" onclick="fetch('http://10.93.8.54/on')">开继电器</button>
+<br>
+<button id="off" onclick="fetch('http://10.93.8.54/off')">关继电器</button>
+</body>
+</html>
